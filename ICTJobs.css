@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+header {
+    background-image: url(Images/business-computer-connection-450035.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: rgba(255, 255, 255, 0.986);
+    padding: 60px;
+    /*text-align: center;*/
+    line-height: 100px;
+    font-size: 30px;
+    height: 700px;
+    font-family: trebuchet MS;
+}
+
+header, h1 {
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+.nav {
+    display: flex;
+    background-color: #383838;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a {
+    color: rgb(255, 255, 255);
+    padding: 10px 50px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover {
+    background-color: rgb(202, 195, 195);
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+}
+
+a.currentPage {
+    background-color: rgb(202, 195, 195);
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+}
+
+.articleHeader {
+    display: none;
+}
+
+.opening {
+    background-color: rgb(121, 120, 120);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+h2, p {
+    margin: 0;
+    padding: 5px;
+}
+
+h2 {
+    font-size: 20px;
+    text-align: center;    
+}
+
+td {
+    vertical-align: top;
+}
+
+th {
+    background: black;
+    color: white;
+}
+
+.name, .job {
+    text-align: center;     
+}
+
+tr:nth-child(odd) {
+    background: #CCC;
+}
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    max-width: 100%;
+    padding: 5px;
+}
+
+.tableData {
+    overflow-x: auto;
+}
+
+.footer {
+    padding: 2px;
+    text-align: center;
+    background-color: #383838;
+    color: white;
+}
+
+@media screen and (max-width: 900px) {
+    section, .nav {   
+      flex-direction: column;
+      
+    }
+    
+    header {
+        font-size: 20px;
+    }
+    
+    .opening {
+        text-align: center;
+    }
+}
+ 

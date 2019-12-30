@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+header {
+    background-image: url(Images/business-computer-connection-450035.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: rgba(255, 255, 255, 0.986);
+    padding: 60px;
+    /*text-align: center;*/
+    line-height: 100px;
+    font-size: 30px;
+    height: 700px;
+    font-family: trebuchet MS;
+    width: 100%;
+    margin: 0;
+}
+
+header, h1 {
+    text-align: center;
+    text-shadow: 1px 1px 2px black;
+}
+
+.nav {
+    display: grid;
+    grid-template-areas: 
+        'nav1 nav2 nav3 nav4 nav5 nav6';
+    background-color: #383838;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav a {
+    color: rgb(255, 255, 255);
+    padding: 10px 50px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+a:hover {
+    background-color: rgb(202, 195, 195);
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+}
+
+a.currentPage {
+    background-color: rgb(202, 195, 195);
+    color: rgb(0, 0, 0);
+    border-radius: 30px;
+}
+
+.articleHeader {
+    display: none;
+}
+
+.mainContent {
+    display: grid;
+    grid-template-areas:
+    'head1'
+    'body1'
+    'head2'
+    'body2'
+    'head3'
+    'body3';
+    padding: 5px;
+    text-align: center;
+       
+}
+
+h2 {
+    text-align: center;
+}
+
+.footer {
+    padding: 2px;
+    text-align: center;
+    background-color: #383838;
+    color: white;
+}
+
+@media only screen and (max-width: 900px) {
+    header {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .nav {
+        display: grid;
+        grid-template-areas:
+        'nav1'
+        'nav2'
+        'nav3'
+        'nav4'
+        'nav5';
+        justify-content: center;
+        padding: 10px;
+             
+    }
+  
+}

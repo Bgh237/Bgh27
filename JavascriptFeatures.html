@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Features</title>
+    <link rel="stylesheet" type="text/css" href="JavaScriptFeatures.css">
+</head>
+<body>
+
+    <header>
+        <h1>KEY FEATURES OF JAVASCRIPT</h1>
+    </header>
+
+    <nav class="nav">
+        <a href="HomePage.html">Home</a>
+        <a href="LearningProgramming.html">Learning Programming</a>
+        <a class="currentPage" href="JavascriptFeatures.html">Javascript Features</a>
+        <a href="GoingForward.html">Going forward</a>
+        <a href="ICTjobs.html">ICT Jobs</a>
+        <a href="10UsabilityHeuristics.html">The 10 Usability Heuristics</a>
+    </nav>    
+
+    <article>
+        
+        <h2 class="articleHeader">Article showing the key features of javascript</h2>
+        
+        <section class="eureka">
+            <h2>My Eureka Moment</h2>
+
+            <p>
+                In my expereinces with Javascript it is generally quite an 
+                easy programming language to learn. However, I did face an 
+                issue when I was learning the arrays. The problem I was having 
+                was that I was over complicating things in my head and thinking 
+                things were much harder than they acually were. I used a number 
+                of sources on the internet to try and figure out the issues I 
+                was having with Arrays but all I seemed to come across was 
+                solutions for more difficult and adanced options. I kept working 
+                at my problems and then everything seemed to click in to place 
+                and I started to look at things in a more simplistic way. By 
+                doing this I overcame my issues and started to understand arrays 
+                better. I am now comfortable with the arrays and no longer have 
+                a problem. Below I have listed a number of features of Javascript 
+                that you are likely to come across whilst learning. I have 
+                explained how each works so hopefully after reading this you will 
+                better understand Javascript as a whole.
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>Functions</h2>
+
+            <p>
+                Functions are a key component for Javascript. Functions allow a 
+                set of instructions or statements to be carried out which 
+                calculates to a value. The function needs to be called from your
+                HTML code and the HTML page needs to be linked to a JavaScript
+                page. Below is a simple example of a function as show in HTML 
+                and JavaScript.
+            </p>
+
+            <div class="picContainer">
+                <figure>
+                    <img src="Images/Function_example_1.jpg" alt="Functions Example">
+                    <figcaption>
+                        Example of a simple JavaScript function
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="Images/Function_example_2.png" alt="Functions Example">
+                    <figcaption>
+                        Example of a simple JavaScript function
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="Images/Function_example_3.png" alt="Functions Example">
+                    <figcaption>
+                        Example of a simple JavaScript function
+                    </figcaption>
+                </figure>
+            </div>
+
+            <p>
+                As you can see from the picture, the HTML page is linked to 
+                the js page via the script tag. The function is then created 
+                in js. When the function is called at the bottom of the js 
+                page, it follows the set of statements defined by the function,
+                using the input within the brackets as the input in to the 
+                function. In the first function, the price is defined as 
+                100.00 so the variable priceWithVat becomes 100.00 * 1.24. An
+                input text is created using the information and the the output
+                text is printed to the console with the use of console.log.
+                The output can be seen in the bottom box on the left.            
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>Variables</h2>
+
+            <p>
+                Variables are an important part to learn in JavaScript. 
+                Variables allow you to assign string or integers to a word.
+                They are basically a named memory location. This becomes very 
+                handy when using very large numbers or calculations. Instead 
+                of typing out the whole number or calculation, you can just 
+                type the name of the variable and JavaScript will know you 
+                want to use whatever has been assigned to that variable. This 
+                will speed up your code writing a great deal and makes your 
+                code a lot easier to read for other developers and web 
+                browsers. Below is an example of variables in use:
+            </p>
+
+            <div>
+
+            <figure>
+                <img class="pic1" src="Images/JS_variables_example.jpg" alt="Variables Example">
+                <figcaption>
+                    Example of a simple JavaScript variable
+                </figcaption>
+            </figure>
+
+            </div>
+
+            <p>
+                As you can see from the picture, var x is created and the 
+                number 5 is assigned to the variable x. Next the variable y is
+                created and the number 6 is assigned to the variable y. 
+                Finally, the variable z is created and the variable x is added
+                to the variable y. As x is 5 and y is 6, z becomes 5 + 6 which
+                equals 11. If you were to print z it would print the number 11.
+            </p>
+
+        </section>
+
+        <section>
+
+            <h2>Conditional Statements</h2>
+
+            <p>
+                Conditional statements are used to execute or skip a statement 
+                that meet or do not meet a specified condition. This is done with
+                the use of 'if' and 'else' statements. If the input matches a 
+                certain criteria, a certain code will run, else another code will
+                run. This is shown in the example below:
+            </p>
+        
+            <div class="picContainer">
+
+            <figure>
+                <img src="Images/Conditional_statement_1.png" alt="Conditional Example">
+                <figcaption>
+                    Example of a simple JavaScript conditional statement
+                </figcaption>
+            </figure>
+
+            <figure>
+                <img  src="Images/Conditional_statement_2.png" alt="Conditional Example">
+                <figcaption>
+                    Example of a simple JavaScript conditional statement
+                </figcaption>
+            </figure>
+        </div>  
+
+            <p>
+                As you can see, a form has been created using the &lt;form&gt; 
+                tag. This creates a text box and assigns an id to the input of 
+                the text box and calls the function when the OK button is clciked.
+                In our js page we can now define the function. We retrieve the 
+                input to the text box by using the document.getElementById().value 
+                code. This finds the id that you specify and returns the value of 
+                the id. It has then been assigned to the variable ageText
+            (   This is currently saved as text ad not a number). Next it is 
+                converted from a string to an integer and saved to the variable 
+                age. We then use the if statement to see if the input matches 
+                certain criteria. In this case, whether the person is an adult or 
+                a minor. The if statement will take the input and IF it is less 
+                than 18 then the code will run to assign the output text to 
+                "You're a minor", ELSE it will run the code to assign the output 
+                text to "You're an adult.". It will then print the results to the 
+                page using the document.getElementById().innerHTML code. Notice 
+                the .innerHTML part of the code will input what you assign to 
+                that code to the page, whereas the .value will retrieve the value
+                from the id. This was something that I realised early on was 
+                important as it made it much easier for me to understand how id's 
+                work. 
+            </p>
+    
+        </section>
+
+        <section>
+    
+            <h2>Loops</h2>
+
+            <p>
+                Loops are an important feature within JavaScript. There are two 
+                main types of loops, a 'for' loop and a 'while' loop. Both of 
+                these loops will run a code when certain criteria is met. If the 
+                input does not meet the criteria, the code will not run. Below is 
+                an example of a 'for' loop and a 'while' loop:
+            </p>
+
+            <h3>While Loop:</h3>
+
+            <div class="picContainer">
+
+                <figure>
+                    <img src="Images/JS_while_loop_example_1.png" alt="'while' loop Example">
+                    <figcaption>
+                        Example of a simple JavaScript 'while' loop code
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="Images/JS_while_loop_example_2.png" alt="'while' loop Example">
+                    <figcaption>
+                        Output of 'while' loop code
+                    </figcaption>
+                </figure>
+
+            </div>
+
+            <p>
+                From the example of the 'while' loop we can see that the variable 
+                i is defined outside of the loop as well as the variable text, 
+                which has been left as an empty string. i has been defined as 0 
+                so when we start the loop we know that i is 0. The loop specifies 
+                that while i is less than 10 this code will run. As we know, i is 
+                0 to start with so we enter the loop. The loop then tells us that 
+                we need to add the string to the text variable. Notice the += 
+                sign here. This is very important to remember as this allows you 
+                to add something on to an existing variable. Remembering this will 
+                help a lot when you are asked to code more complicated things. 
+                After the string is added we also add the value of i to the 
+                string, which is this case is 0. Adding something to a string 
+                like this is known as concatenation. The text is then saved to 
+                the variable for future use in the loop. We then see i++ in the 
+                code. This is a simpler way to say i + 1 and turns i from 0 to 1. 
+                We then go back to the while condition and check that i still 
+                meets the condition, which it does, so we run the code again. 
+                This will continue until i no longer meets the condition outlined 
+                by the loop. Once this heppens we then print the combined text to 
+                the HTML page and out output can be seen in the picture on the 
+                right.
+            </p>
+
+            <h3>For Loop:</h3>
+        
+            <div class="picContainer">
+
+                <figure>
+                    <img src="Images/JS_for_loop_example_1.png" alt="'for' loop Example">
+                    <figcaption>
+                        Example of a simple JavaScript 'for' loop code
+                    </figcaption>
+                </figure>
+        
+                <figure>
+                    <img src="Images/JS_for_loop_example_2.png" alt="'for' loop Example">
+                    <figcaption>
+                        Output of 'for' loop code
+                    </figcaption>
+                </figure>
+            </div>
+
+            <p>
+                As you can see from the example of the 'for' loop, it is very 
+                similar to the 'while' loop. The major difference is that the 
+                variable i is defined within the parenthesis of the 'for' loop 
+                rather than outside it like with the 'while' loop. You will 
+                notice that the i++ is also within the parenthesis but everything 
+                else is very much the same. The text variable is defined outside 
+                the loop and added to within the loop like before. The 'for' loop 
+                makes your code look much cleaner and then things get more 
+                complicated it is generally easier to understand than a while 
+                loop. However, there are some confusing aspects to the 'for' loop 
+                that confused me at first. As we have mentioned there are 3 parts 
+                to the 'for' loop, the allocation of a number to the variable, 
+                the condition and the addition/subtraction of i. Although these 
+                are all in the parenthesis, the loop does not action all of these 
+                before entering the loop. First it will take the assigned value 
+                of the variable and check it against the condition. If the 
+                variable meets the condition specifications then it will enter 
+                the loop. Once it enters the loop it will action the code within 
+                the loop. It will then go to the addition/subtraction and in this 
+                case add 1 to the variable i. It will then check this against the 
+                condition and enter the loop again. It will continue to do this 
+                until the variable i no longer meeters the specifications of the 
+                condition and once that heppens it will leave the loop and print 
+                the text variable to the HTML page as with the 'while' loop.
+                <br><br>
+                Loops are something that I defintely struggled with but I think
+                my major problem with it was over complicating it in my mind. It
+                is important to remember that the variable i is used only to 
+                specify how many times the loop will run and has no impact on 
+                anything else outside of the loop. One piece of advice I would
+                give to you is that if you are struggling with loops, try to
+                uncomplicate your thoughts and keep it simple. This helped me a
+                lot when first learning loops.
+            </p>
+
+        <secton>   
+    
+            <h2>Arrays</h2>
+
+            <p>
+                Arrays are very useful within JavaScript. Arrays allow you to 
+                store multiple values in a single variable. This may not sound 
+                that useful but if, for example, you had 100 students and you 
+                wanted to print all of their grades to the console, without an 
+                array you would have to type out each grade and assign each grade 
+                to its own variable. This would be very time consuming and clog 
+                up your page. Arrays allow you to create one variable and recall 
+                any value within the array by typing the name of the array and 
+                the position of the value within the array. The position needs to 
+                be within square brackets, for example, array[1]. It is very 
+                important to know that within an array the first value will be at 
+                position 0 and not 1. This caused me a little bit of confusion at 
+                first but the more you practice with arrays this will become 
+                second nature to you. New values can be added to an array at any 
+                time and values can also be replaced within an array so once you 
+                have created an array they are very flexible. Below is an example 
+                of an Array within a loop:
+            </p>
+
+            <div class="picContainer">
+
+                <figure>
+                    <img src="Images/JS_array_example_1.png" alt="Array Example">
+                    <figcaption>
+                        Array within a loop code
+                    </figcaption>
+                </figure>
+
+                <figure>
+                    <img src="Images/JS_array_example_2.png" alt="'Array Example">
+                    <figcaption>
+                        Output array within a loop code
+                    </figcaption>
+                </figure>
+
+            </div>
+
+            <p>
+                As you can see from the example, an array has been created for 
+                different types of fruit. the fruits.length feature returns the 
+                length of the array so in this case it would return 4 as there 
+                are 4 values in the array. This can cause some confusion as we 
+                said earlier that the array starts from position 0, however when 
+                it comes to length we simply count how many values are in the 
+                array and ignore any postions. When we enter the loop we have 
+                specified that i is 0 and that the amount of times we go through 
+                the loop will be less than the length of the array. We now enter 
+                the loop and add to the text variable as we have met the 
+                conditions of the loop. You will see that fruits[i] is added to 
+                the text variable. This is taking the value of the fruits array 
+                that matches the postion i, which in this case would be 0 so we 
+                take the value that is in position 0 of the array. This is then 
+                added to the text and we continue with the loop. As we have added 
+                1 to the variable i that now become 1, which meets the condition 
+                so we go in to the loop and now we added the value that is in the 
+                furits array at position 1 as i is now 1. This continues until 
+                the condition is no longer met and we come out of the loop and 
+                print the text variable to the HTML page. Please note that when 
+                using an array within a loop it is important to set the condition 
+                of the loop to less than the length of the array. This is useful 
+                becomes often things will be added to the array so the size will 
+                grow. If we set the condition to a specific figure, the array 
+                could quickly outgrow that number and our loop is no longer 
+                effective. It is also important to set it less than the length 
+                due to the postions of the values in the array. As mentioned 
+                earlier if an array has 4 values its positions will be 0, 1, 2, 3 
+                so i can only go up to 3 to bring back a value. If we set the 
+                condtion to less than or equal the length we would get i is 4 and 
+                as there is nothing in position 4 this will return nothing. This 
+                is something that I had to get my head around as it seems quite 
+                contradictory but the more you do it the more it sticks with you. 
+            </p>
+        </section>
+
+    </article>
+
+    <footer class="footer">
+
+        <h2>Website developed by Haaga-Helia Digital Services Team</h2>
+
+        <a href="http://validator.w3.org/check?uri=referer">
+            <img style="border:none;height:31px;width:31px;text-decoration:none;"
+                    src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/html_logo_grayscale_31.png"
+                    alt="Valid HTML"  /></a>
+
+        <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img style="border:none;width:88px;height:31px;text-decoration:none;"
+                     src="http://myy.haaga-helia.fi/~valju/ValidatorLogos/css_logo_grayscale_31.png"
+                     alt="Valid CSS" /></a>
+    </footer>
+
+</body>
+</html>
